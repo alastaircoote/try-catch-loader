@@ -12,6 +12,13 @@ for example. This causes problems when you're trying to do server-side
 rendering of a React component (for example) as the require statement
 will fail.
 
+## What doesn't it do?
+
+Fix the library. It'll just cause the require statement
+to return null, so the module will be inaccessible. You either need it to 
+be inside a function that doesn't get run on the server, or wrap it in an 
+if statement that checks what it is.
+
 ## Give me an example
 
 Fine. Consider the following React component:
@@ -34,13 +41,6 @@ When wrapped in `try-catch` it won't - it will just return null. Normally
 that would be a problem, but server-side rendered React components never
 run `componentDidMount` (instead running it client-side on load), so the
 render won't actually throw an error.
-
-## What doesn't it do?
-
-Fix the library. As mentioned above, it'll just cause the require statement
-to return null, so the module will be inaccessible. You either need it to 
-be inside a function that doesn't get run on the server, or wrap it in an 
-if statement that checks what it is.
 
 ## How do I use it?
 
