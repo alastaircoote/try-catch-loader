@@ -1,7 +1,5 @@
 # try-catch loader
 
-## What is it?
-
 A Webpack loader that wraps required JS in a try/catch.
 
 ## Why would I use that?
