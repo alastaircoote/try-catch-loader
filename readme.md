@@ -21,7 +21,7 @@ if statement that checks what it is.
 
 Fine. Consider the following React component:
 
-    var someClientsideLibrary = require('some-client-side-library);
+    var someClientsideLibrary = require('some-client-side-library');
     var React = require('react');
 
     module.exports = React.createClass({
