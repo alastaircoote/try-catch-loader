@@ -1,0 +1,17 @@
+{
+  "name": "try-catch-loader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --require should test/test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "memory-fs": "^0.3.0",
+    "mocha": "^2.4.5",
+    "should": "^8.2.2",
+    "webpack": "^1.12.14"
+  }
+}
