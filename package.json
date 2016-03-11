@@ -13,5 +13,9 @@
     "mocha": "^2.4.5",
     "should": "^8.2.2",
     "webpack": "^1.12.14"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alastaircoote/try-catch-loader.git"
   }
 }
